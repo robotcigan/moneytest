@@ -1,0 +1,61 @@
+.modal
+  animation bigFadeUp .3s forwards ease
+  background #fff
+  box-shadow 0 1rem 2rem rgba($main, .1)
+  border-radius 4px
+  display none
+  overflow-X hidden
+  margin 10rem auto
+  padding 4rem 6rem
+  position relative
+  width 92rem
+  &__title
+    font-size 3.2rem
+    font-weight 700
+    letter-spacing 1px
+    & + .form
+      margin-top 2rem
+  &__subtitle
+    margin-bottom 2rem
+  &__btn-group
+    margin-top 2rem
+    .btn
+      margin-right 2rem
+  &__info
+    background-color $blue
+    margin 4rem (-(90 / 920) * 100)%
+    padding 2rem ((90 / 920) * 100)%
+  .link-group
+    margin 2rem 0
+
+  .form-control
+    input,
+    textarea
+      border 1px solid #ddd
+
+.mfp-ready
+  .modal
+    display block
+
+.mfp-close,
+.mfp-close:active
+  font-size 4rem
+  opacity 1
+  // top ((50 / 920) * 100)%
+  // right ((50 / 920) * 100)%
+  top 2rem
+  right 2rem
+
+
+@media(max-width 767px)
+  .mfp-container
+    padding 0
+  .modal
+    right 0
+    width 94%
+  .mfp-close,
+  .mfp-close:active
+    font-size 4rem
+    opacity 1
+    top 1rem
+    right -.5rem

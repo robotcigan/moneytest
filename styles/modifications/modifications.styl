@@ -1,0 +1,56 @@
+.map__slider
+  .slick-prev,
+  .slick-next
+    background $secondary
+    border-radius 50%
+    circle(6rem)
+    text-align center
+    top 50%
+    transition background-color .2s
+    z-index 50
+    &:focus
+      background $secondary
+    &:hover
+      background-color $secondary - 15%
+      &:before
+        color #fff
+    &:before
+      &:hover
+        color $primary
+
+  .slick-prev:before,
+  .slick-next:before
+    color #fff
+    font-family FontAwesome
+    font-size 2.4rem
+    line-height 1.5rem
+    margin-left 4px
+
+  .slick-prev
+    left 0
+    &:before
+      content '\f104'
+      margin-right 5px
+
+  .slick-next
+    right 0
+    &:before
+      content '\f105'
+
+.slider-nav
+  .slick-prev,
+  .slick-next
+    top 33%
+    &:before
+      color $main
+      font-family FontAwesome
+      font-size 3rem
+  .slick-prev
+    left 10rem
+    &:before
+      content '\f104'
+      margin-right 5px
+  .slick-next
+    right 10rem
+    &:before
+      content '\f105'

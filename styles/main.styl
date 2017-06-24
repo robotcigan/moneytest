@@ -1,0 +1,129 @@
+@import 'helpers/variables.styl'
+@import 'helpers/mixins.styl'
+@import 'helpers/helpers.styl'
+
+@import 'base/base.styl'
+@import 'base/typography.styl'
+@import 'base/animations.styl'
+@import 'base/ui.styl'
+
+@import 'modifications/modifications.styl'
+
+@media (min-width: 1200px)
+  .container
+    width 1110px
+
+
+.main-header
+  margin-bottom 12rem
+  // padding-top (130 / 790 * 100)%
+  padding-top 13rem
+  text-align center
+
+.logo
+  background url('../../img/logo.png') no-repeat 50%
+  background-size contain
+  display inline-block
+  margin-bottom 1rem
+  size(6rem, 15rem)
+
+.bdsm
+  font-size 2.7rem
+
+.hero
+  background url('../../img/bg.jpg') no-repeat
+  background-size cover
+  color #fff
+  height 100vh
+  max-height 79rem
+  min-height 70rem
+  &__container
+    text-align center
+  &__title
+    font-size 5.5rem
+    font-weight 800
+    margin-bottom 1rem
+  &__subtitle
+    font-size 2.2rem
+    line-height 1.2
+    margin-bottom 5rem
+
+.info
+  background-color $primary
+  color #fff
+  padding-bottom 19.5rem
+  padding-top 12.5rem
+  &__header
+    font-size 5.5rem
+    font-weight 800
+    margin-bottom 4rem
+    text-align center
+  p
+    color #fff
+
+.info-items
+  margin-bottom 13rem
+  margin-top -14.5rem
+  .item
+    background-color #fff
+    border-radius 5px
+    padding 4rem
+    text-align center
+    img
+      margin-bottom 1rem
+    &__number
+      color $primary
+      font-size 4rem
+      font-weight 800
+    &__word
+      color $primary
+      font-size 2.8rem
+      margin-bottom 2rem
+    p
+      color #8b8b8b
+      font-size 1.8rem
+
+.test-title
+  color $primary
+  font-size 5.5rem
+  font-weight 800
+  margin-bottom 7rem
+  text-align center
+
+.question
+  margin-bottom 5rem
+  &-header
+    display flex
+    margin-bottom 2.5rem
+  &__number
+    background-color $primary
+    border-radius 50%
+    circle(4rem)
+    color #fff
+    flex-shrink 0
+    margin-right 2.5rem
+    padding-top 1.3rem
+    text-align center
+    transform translateY(-.1rem)
+    vertical-align middle
+  .radio
+    padding-left 6.9rem
+
+.main-footer
+  background-color #383838
+  color #fff
+  margin-top 7rem
+  padding-bottom 6rem
+  padding-top 7rem
+  &__right
+    text-align right
+  p
+    color #fff
+    font-size 1.8rem
+    line-height 1
+    margin 0
+    margin-bottom 1rem
+
+@import 'base/media.styl'
+
+
